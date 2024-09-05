@@ -2,6 +2,8 @@
 
 :root {
     --warna-aksen:#20245e;
+    --warna-primary: #fefefe;
+    --warna-secondary: #efefef;
 }
 
 *,
@@ -131,7 +133,7 @@ header nav ul .side-satu, .side-dua, .side-tiga, .side-empat{
 
 
 .login-btn{
-    border: none;
+    border: 1px solid var(--warna-aksen);
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -229,7 +231,7 @@ input:focus {
 
     padding: 13px 20px;
 
-    border: none;
+    border: var(--warna-aksen) 1px solid;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -734,11 +736,190 @@ footer p, footer a{
     border: 1px solid var(--warna-aksen);
 }
 
+/* Checkout Page */
 
+.checkout-page{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.checkout-produk{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 1rem;
+
+    background-color: #efefef;
+}
+
+.checkout-produk h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.checkout-card-produk{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem;
+
+    border-radius: 10px;
+}
+
+
+.gambar-pengirim{
+    width: 100px;
+}
+
+.foto-produk-checkout{
+    width: 100px;
+}
+
+.pengiriman{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    margin-top: 1rem;
+}
+
+.pengiriman-card{
+    width: 70%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    border-radius: 10px;
+}
+
+.checkout-pembayaran{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 1rem;
+
+    background-color: #fefefe;
+}
+
+.pembayaran-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: start;
+}
+
+.checkout-pembayaran h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.metode-pembayaran-btn-checkout{
+    text-decoration: none;
+}
+
+.metode-pembayaran-btn-checkout button{
+    width: 110px;
+    height: 100px;
+
+    background-color: var(--warna-primary);
+    border: 1px solid var(--warna-aksen);
+    border-radius: 10px;
+}
+
+.metode-pembayaran-img{
+    width: 100px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transaksi-checkout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.keterangan-transaksi-checkout{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bayar-sekarang{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 1rem;
+
+    background-color: var(--warna-aksen);
+    color: var(--warna-primary);
+    border: 1px solid var(--warna-aksen);
+    border-radius: 10px;
+
+    text-decoration: none;
+    transition: ease-in-out .3s;
+}
+
+.bayar-sekarang:hover{
+    background-color: var(--warna-primary);
+    color: var(--warna-aksen);
+    border: 1px solid var(--warna-aksen);
+}
+
+.alamat-email-checkout{
+    width: 100%;
+}
+
+#email{
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#jumlah{
+    width: 100%;
+    padding: 5px 10px;
+}
 
 
 
 @media screen and (max-width: 768px) {
+
+    
+
     header nav ul .satu, .dua, .tiga, .empat{
         display: none;
     }
@@ -815,5 +996,28 @@ footer p, footer a{
 
     .keterangan-produk{
         width: 90%;
+    }
+
+    /* Checkout */
+
+    .checkout-page{
+        flex-direction: column;
+    }
+
+    .checkout-produk{
+        width: 100%;
+        background-color: #fefefe;
+    }
+
+    .pengiriman{
+        background-color: #fefefe;
+    }
+
+    .checkout-pembayaran{
+        width: 100%;
+    }
+
+    .checkout-card-produk, .pengiriman-card{
+        width: 100%;
     }
 }

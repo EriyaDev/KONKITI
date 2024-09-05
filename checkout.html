@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnixMed</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js" integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cd705c9d2a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a class="logo" href="#">
+                <h3 class="logotype">UnixMed</h3>
+            </a>
+
+            <div class="list">
+                <ul>
+                    <li class="satu"><a href="homepage.html">Beranda</a></li>
+                    <li class="dua"><a href="artikel.html">Artikel</a></li>
+                    <li class="tiga"><a href="obat.html">Obat</a></li>
+                    <li class="hamburger"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#20245e"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+
+                
+                <ul class="sidebar">
+                    <li class="side-satu"><a href="homepage.html">Beranda</a></li>
+                    <li class="side-dua"><a href="artikel.html">Artikel</a></li>
+                    <li class="side-tiga"><a href="obat.html">Obat</a></li> 
+                    <li class="close"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+
+                </ul>
+            </div>
+            <div class="search-n-login">
+                <div class="search-field">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                    <input class="search" type="text" placeholder="Cari obat">
+                </div>
+                <button class="login-btn">Login</button>
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <main class="checkout-container">
+        <div class="checkout-page">
+
+            
+            <div class="checkout-produk">  
+                <h3>Informasi Produk</h3>
+                <div class="checkout-card-produk">
+                    <img src="https://cf.shopee.co.id/file/08478926fa5e62c1ad67339502c82732" alt="" class="foto-produk-checkout">
+                    
+                    <div class="keterangan-produk-checkout">
+                        <h3 class="nama-produk-checkout">Vitacimin</h3>
+                        <input type="number" name="" id="jumlah" min="1"><p class="per">Strip</p>
+                    </div>
+                </div>
+                <div class="checkout-card-produk">
+                    <img src="https://cf.shopee.co.id/file/08478926fa5e62c1ad67339502c82732" alt="" class="foto-produk-checkout">
+                    
+                    <div class="keterangan-produk-checkout">
+                        <h3 class="nama-produk-checkout">Vitacimin</h3>
+                        <input type="number" name="" id="jumlah" min="1"><p class="per">Strip</p>
+                    </div>
+                </div>
+                
+                <div class="pengiriman">
+                    <h3>Pengiriman</h3>
+                    
+                    <div class="pengiriman-card">
+                   <input type="radio" id="html" name="delivery" value="HTML">
+                   
+                   <div class="pengiriman-keterangan">
+                       <h3 class="harga-produk-checkout">Rp. <span class="harga-produk-checkout-value">10000</span></h3>
+                       <p class="estimasi-pengiriman per">Estimasi diterima, 2 - 3 hari</p>
+                    </div>
+                    
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Logo_J%26T_Merah_Square.jpg" alt="" class="gambar-pengirim">
+                </div>
+                <div class="pengiriman-card">
+                    <input type="radio" id="html" name="delivery" value="HTML">
+                    
+                    <div class="pengiriman-keterangan">
+                        <h3 class="harga-produk-checkout">Rp. <span class="harga-produk-checkout-value">10000</span></h3>
+                        <p class="estimasi-pengiriman per">Estimasi diterima, 4 - 5 hari</p>
+                    </div>
+                    
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/New_Logo_JNE.png" alt="" class="gambar-pengirim">
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-pembayaran">
+            <div class="pembayaran-container">
+                
+                <div class="detail-pembayaran-checkout">
+                    <h3>Detail Pembayaran</h3>
+                    <p class="per">Selesaikan pembayaran dengan mengisi form dibawah ini.</p>
+                </div>
+                
+                <div class="alamat-email-checkout">
+                    <h3>Email</h3>
+                    <input type="text" name="email" id="email" placeholder="Masukkan Email">
+                </div>
+                
+                <div class="metode-pembayaran-checkout">
+                    <h3>Pilih metode pembayaran</h3>
+                    
+                    <div class="metode-pembayaran-btn-container-checkout">
+                        <a href="" class="metode-pembayaran-btn-checkout">
+                            <button>
+                                <img src="https://1.bp.blogspot.com/-EmJLucvvYZw/X0Gm1J37spI/AAAAAAAAC0s/Dyq4-ko9Eecvg0ostmowa2RToXZITkbcQCLcBGAsYHQ/w1200-h630-p-k-no-nu/Logo%2BShopeePay.png" alt="" class="metode-pembayaran-img">
+                            </button>
+                        </a>
+                        <a href="" class="metode-pembayaran-btn-checkout">
+                            <button>
+                                <img src="https://1.bp.blogspot.com/-aYApmQz2ZF4/XnK19AqNMYI/AAAAAAAASb8/UoPPqLROubECfTZbAqlX9FZJMgtVvi3OgCLcBGAsYHQ/s1600/Dana.png" alt="" class="metode-pembayaran-img">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="transaksi-checkout">
+                    <div class="keterangan-transaksi-checkout">
+                        <h3 class="per">Sub Total</h3>
+                        <h3>Rp. <span id="subtotal">20000</span></h3>
+                    </div>
+                    <div class="keterangan-transaksi-checkout">
+                        <h3 class="per">Diskon</h3>
+                        <h3>Rp. <span id="total">0</span></h3>
+                    </div>
+                    <div class="keterangan-transaksi-checkout">
+                        <h3 class="">Total</h3>
+                        <h3>Rp. <span id="total">20000</span></h3>
+                    </div>
+
+                    <a href="" class="bayar-sekarang">Bayar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    </main>
+    
+    <footer>
+        <p>Copyright 2024&copy;Unix Team</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
