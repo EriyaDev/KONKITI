@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login dan SignUp</title>
+    <link rel="stylesheet" href="style/signup.css" />
+    <link rel="stylesheet" href="style/sigUp_Login.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="form-container">
+          <form>
+            <div class="input-group input-name">
+              <label for="name">Nama</label>
+              <input type="text" id="name" placeholder="Masukkan Nama" required/>
+            </div>
+
+            <div class="input-group input-email">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Masukkan Email" required/>
+            </div>
+
+            <div class="input-group input-dob">
+              <label for="dob">Tanggal Lahir</label>
+              <input type="date" id="dob" required/>
+            </div>
+
+            <div class="input-group password-container">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Masukkan Password"
+                name="password"
+                class="input-password"
+                required
+              />
+              <div class="toggle-password-container">
+                <span class="toggle-password" id="togglePassword">👁️</span>
+                <br />
+                <span class="toggle-text" id="toggleText">Sembunyikan</span>
+              </div>
+            </div>
+
+            <div class="actions">
+              <label class="remember-me">
+                <input type="checkbox" id="remember" /> Ingat Saya
+              </label>
+            </div>
+
+            <!-- Tombol Simpan -->
+            <div class="profile-buttons">
+              <button type="submit" class="button"><a href="profile.html">Sign Up</a></button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <section>
+      <script src="script/signup.js"></script>
+    </section>
+  </body>
+</html>

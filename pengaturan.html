@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile Page</title>
+    <link rel="stylesheet" href="style/profile.css" />
+  </head>
+  <body>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="image-setting-container">
+            <img src="image/Myu.webp" class="image-setting" alt="Foto Profil" title="Foto Profil">
+          </div>
+          <form id="editProfileForm">
+            <!-- Informasi Dasar -->
+            <div class="profile-section basic-info-form">
+              <h2>Informasi Dasar</h2>
+
+              <div class="basic-info-form">
+               <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" required /> 
+              </div>
+              
+              <div class="basic-info-form">
+                <label for="alamat">Alamat</label>
+                <input type="text" id="alamat" name="alamat" required />
+              </div>
+
+              <div class="basic-info-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              
+              <div class="basic-info-form">
+                <label for="telepon">Nomor Telepon</label>
+                <input type="tel" id="telepon" name="telepon" required />  
+              </div>
+              
+            </div>
+
+            <!-- Informasi Biodata -->
+            <div class="profile-section">
+              <div class="profile-section basic-info-form">
+                <h2>Informasi Biodata</h2>
+                <label for="tanggalLahir">Tanggal Lahir</label>
+                <input type="date" id="tanggalLahir" name="tanggalLahir" required />
+              </div>
+              
+              <div class="profile-section basic-info-form">
+                <label>Jenis Kelamin</label>
+                <input type="radio" id="laki" name="jenisKelamin" value="Laki-laki" required />
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan" required />
+                <label for="perempuan">Perempuan</label>
+              </div>
+
+              <div class="profile-section basic-info-form">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+
+              <div class="profile-section basic-info-form">
+                <label for="password">Konfirmasi Password</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+
+              <div class="profile-section basic-info-form">
+                <label for="kota">Kota/Kabupaten</label>
+                <input type="text" id="kota" name="kota" required />
+              </div>
+              
+            </div>
+
+            <!-- Pengaturan Privasi -->
+            <div class="profile-section">
+              <h2>Pengaturan Privasi</h2>
+              <label>Privasi</label>
+              <input type="radio" id="publik" name="privasi" value="Publik" required />
+              <label for="publik">Publik</label>
+              <input type="radio" id="pribadi" name="privasi" value="Pribadi" required />
+              <label for="pribadi">Pribadi</label>
+            </div>
+
+            <!-- Tombol Simpan -->
+            <div class="profile-buttons-edit">
+              <button type="submit" class="button-edit"><a href="profile.html">Simpan</a></button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login dan SignUp</title>
+    <link rel="stylesheet" href="style/login.css" />
+    <link rel="stylesheet" href="style/sigUp_Login.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="form-container">
+          <form>
+            <div class="input-group input-name">
+              <label for="usernameOrEmail">Username atau Email</label>
+              <input
+                type="text"
+                id="usernameOrEmail"
+                placeholder="Masukkan Username atau Email"
+                required
+              />
+            </div>
+
+            <div class="input-group password-container">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Masukkan Password"
+                name="password"
+                class="input-password"
+                required
+              />
+              <div class="toggle-password-container">
+                <span class="toggle-password" id="togglePassword">👁️</span>
+                <br />
+                <span class="toggle-text" id="toggleText">Sembunyikan</span>
+              </div>
+            </div>
+
+            <div class="actions">
+              <label class="remember-me">
+                <input type="checkbox" id="remember" /> Ingat Saya
+              </label>
+              <a href="#" class="forgot-password">Lupa Password?</a>
+            </div>
+
+            <button class="submit-btn"><a href="profile.html" >Login</a></button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <section>
+      <script src="script/login.js"></script>
+    </section>
+  </body>
+</html>
