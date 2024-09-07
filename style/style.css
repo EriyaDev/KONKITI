@@ -15,8 +15,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 body{
     margin: 0;
     padding: 0;
@@ -1019,5 +1017,154 @@ footer p, footer a{
 
     .checkout-card-produk, .pengiriman-card{
         width: 100%;
+    }
+}
+
+/* KODE YANG SAYA TAMBAHKAN ~PANJIE */
+/* Media Queries */
+
+
+/* Untuk layar ponsel sangat kecil */
+@media (max-width: 375px) {
+    div.content > .text > h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    div.judul > h2 {
+        font-size: 1.4rem;
+    }
+
+    .CTA-button {
+        padding: 5px;
+        padding-bottom: 10px;
+        font-size: 11px;
+        width: 93px;
+        height: 27px;
+        border: none;
+    }
+
+    .intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    }
+
+    div.artikel-homepage {
+        padding-top: 1.7rem;
+    }
+
+    div.judul {
+        flex-direction: column;
+    }
+
+    div.kategori > .kategori-btn-active, .kategori-btn {
+        width: 109px;
+        height: 49px;
+        font-size: 11px;
+    }
+
+    div.kategori {
+        overflow: auto;
+    }
+
+    div.isi-artikel-card > a {
+        width: 62%;
+    }
+
+    div.isi-artikel-card {
+        gap: 1;
+    }
+
+    .artikel-card h3 {
+        font-size: 14px;
+    }
+
+    div.artikel-homepage {
+        padding-top: 3rem;
+    }
+
+    div.obat-card {
+        width: 40%;
+    }
+
+    footer {
+        padding: 0;
+    }
+}
+
+/* Untuk Mobile L */
+@media (max-width: 425px) {
+
+    div.content > .text > h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    div.judul > h2 {
+        font-size: 1.4rem;
+    }
+
+    .CTA-button {
+        padding: 5px;
+        padding-bottom: 10px;
+        font-size: 11px;
+        width: 93px;
+        height: 27px;
+        border: none;
+    }
+
+    .intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    }
+
+    div.artikel-homepage {
+        padding-top: 1.7rem;
+    }
+
+    div.judul {
+        flex-direction: column;
+    }
+
+    div.text > p {
+        text-align: center;
+    }
+
+    div.kategori > .kategori-btn-active, .kategori-btn {
+        width: 109px;
+        height: 49px;
+        font-size: 11px;
+    }
+
+    div.kategori {
+        overflow: auto;
+    }
+
+    div.isi-artikel-card > a {
+        width: 62%;
+    }
+
+    div.isi-artikel-card {
+        gap: 1;
+    }
+
+    .artikel-card h3 {
+        font-size: 14px;
+    }
+
+    div.artikel-homepage {
+        padding-top: 3rem;
+    }
+
+    div.obat-card {
+        width: 40%;
+    }
+
+    footer {
+        padding: 0;
     }
 }
