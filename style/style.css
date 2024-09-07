@@ -1092,6 +1092,21 @@ footer p, footer a{
     footer {
         padding: 0;
     }
+
+    .gambar-artikel {
+        margin: auto;
+    }
+
+    .button-produk {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .obat-card img {
+        width: 184%;
+    }
 }
 
 /* Untuk Mobile L */
@@ -1166,5 +1181,53 @@ footer p, footer a{
 
     footer {
         padding: 0;
+    }
+
+    .gambar-artikel {
+        margin: auto;
+    }
+
+    .button-produk {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .obat-card-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1rem 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .obat-card-a {
+        width: 60%;
+    }
+
+    div.obat-card {
+        width: 56%;
+    }
+
+    .obat-card img {
+        width: 184%;
+    }
+
+    .obat-card-container {
+        padding-top: 20px;
+    }
+}
+
+/* checkout.html aku ubah dikit widthnya bagian 768px */
+@media screen and (max-width: 768px) {
+    .checkout-card-produk, .pengiriman-card {
+        width: 101%;
+    }
+
+    .checkout-pembayaran h3 {
+        padding-bottom: 11px;
     }
 }
