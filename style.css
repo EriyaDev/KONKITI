@@ -1296,3 +1296,50 @@ footer p, footer a{
         width: 18%;
     }
 }
+
+@media (max-width: 375px) {
+    .obat-card-a {
+        width: 61%;
+    }
+}
+
+@media (max-width: 375px) {
+    .obat-card img {
+        width: 256%;
+    }
+
+    .detail-obat {
+        padding: 5px 10px;
+        gap: 0rem;
+    }
+
+    .obat-card-container {
+        width: 79%;
+    }
+
+    .obat-container {
+        align-items: center; 
+    }
+}
+
+@media (max-width: 425px) {
+    .obat-card-a {
+        width: 54%;
+    }
+
+    .detail-obat {
+        gap: 0rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .obat-card img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer {
+        margin-top: 20px;
+    }
+}
