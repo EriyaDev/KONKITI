@@ -224,6 +224,8 @@ input:focus {
 
 
 
+
+
 .CTA-button{
     
 
@@ -277,6 +279,7 @@ input:focus {
 }
 
 .kategori {
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -514,12 +517,14 @@ footer p, footer a{
 .kategori-section{
     display: flex;
     flex-direction: column;
-    padding: 4rem 6rem;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
 }
 
 .kategori-item-section{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
@@ -527,13 +532,13 @@ footer p, footer a{
 
 .kategori-item{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 
     background-color: #efefef;
-    padding: 10px 10px;
+    padding: 15px 10px;
     width: 15%;
 
     text-decoration: none;
@@ -548,6 +553,7 @@ footer p, footer a{
 
 .kategori-item h4{
     text-decoration: none;
+    font-weight: 600;
     color: #20245e;
 }
 
@@ -713,13 +719,17 @@ footer p, footer a{
 }
 
 .button-produk{
+    display: flex;
+    flex-direction: row;
     margin-top: 1rem;
+    gap: 5px;
 }
 
 .beli-btn{
     background-color: var(--warna-aksen);
     color: white;
-    padding: 10px 15px;
+    padding: 15px 15px;
+    text-align: center;
 
     border: none;
     border-radius: 5px;
@@ -951,20 +961,41 @@ footer p, footer a{
         width: 100%;
     }
 
-    /* Obat */
+    .kategori{
+        overflow-x: scroll;
+    }
 
-    .kategori-item-section{
+    .button-intro{
         flex-direction: column;
     }
 
-    .kategori-item{
+    .button-intro .CTA-button{
         width: 100%;
+    }
+
+    /* Obat */
+
+    .kategori-section{
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 1rem;
+    }
+
+    .kategori-item-section{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kategori-item{
+        width: 40%;
     }
 
     /* Artikel */
     .isi-artikel-card{
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
     }
 
     .isi-artikel-card a{
@@ -983,6 +1014,22 @@ footer p, footer a{
         width: 90%;
     }
 
+    /* Obat Page */
+
+    .obat-card-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem 2rem;
+        padding-top: 2rem;
+    }
+
+    .obat-card-a{
+        width: 80%;
+    }
+
     /* Detail obat */
     .detail-produk-container{
         flex-direction: column;
@@ -994,6 +1041,10 @@ footer p, footer a{
 
     .keterangan-produk{
         width: 90%;
+    }
+
+    .button-produk{
+        flex-direction: column;
     }
 
     /* Checkout */
