@@ -912,6 +912,35 @@ footer p, footer a{
     width: 100%;
 }
 
+/* Apotek Terdekat */
+
+.apotek-section{
+    padding-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apotek-terdekat{
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.apotek-terdekat h1{
+    font-weight: 600;
+}
+
+.apotek-terdekat h2{
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
 #email{
     width: 100%;
     padding: 5px 10px;
@@ -1068,6 +1097,15 @@ footer p, footer a{
 
     .checkout-card-produk, .pengiriman-card{
         width: 100%;
+    }
+
+    .apotek-terdekat{
+        flex-direction: column;
+        padding-top: 4rem;
+    }
+
+    .apotek-section{
+        padding-top: 1rem;
     }
 }
 
