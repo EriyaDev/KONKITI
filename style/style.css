@@ -27,6 +27,10 @@ body{
     background-color: #fefefe;
 }
 
+a{
+    text-decoration: none;
+}
+
 header{
     display: flex;
     justify-content: center;
