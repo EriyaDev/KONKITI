@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&display=swap');
 
+:root {
+  --warna-aksen:#20245e;
+  --warna-primary: #fefefe;
+  --warna-secondary: #efefef;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
 }
@@ -138,7 +152,7 @@ input[type=tel],
 select {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  /* margin: 8px 0; */
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -154,6 +168,8 @@ select {
 .image-setting-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .history-card{
@@ -213,4 +229,184 @@ select {
 .berhasil{
   border: 1px solid green;
   color: green;
+}
+
+/* Aku nambahin dari sini, benerin bug navbar pakai !important buat maksa*/
+.search {
+  padding: 7px 0 7px 2.5rem !important; 
+  width: 15rem !important;
+  text-align: left !important;
+  background-color: #efefef !important;
+  border: none !important;
+  border-radius: 20px !important;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+header nav{
+  width: 90%;
+  padding-top: 1rem;
+
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  align-items: center;
+
+  z-index: 100;
+
+  background-color: white;
+}
+
+
+
+header nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 1rem 2rem;
+}
+
+header nav ul .satu, .dua, .tiga, .empat{
+  list-style: none;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  font-size: 1rem;
+  color: #20245e;
+
+  transition: .3s ease-in-out;
+}
+
+a:hover{
+  color: var(--warna-aksen);
+}
+
+.logo-header{
+  display: flex;
+  flex: 1;
+  width: 30px;
+  border-radius: 13px;
+}
+
+.logo{
+  text-decoration: none;
+}
+
+
+.logotype{
+  color: var(--warna-aksen);
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.sidebar{
+  display: none;
+  flex-direction: column;
+  position: fixed;
+
+  height: 100vh;
+  width: 40%;
+  top: 0;
+  right: 0;
+
+  padding-left: 1rem;
+
+  background-color: var(--warna-aksen);
+  border-left: 2px solid #fefefe;
+}
+
+header nav ul .side-satu, .side-dua, .side-tiga, .side-empat{
+  list-style: none;
+}
+
+.sidebar a{
+  color: #fefefe;
+}
+
+.sidebar a:hover{
+  color: #efefef;
+}
+
+.hamburger{
+  display: none;
+  flex: 3;
+}
+
+.close{
+  list-style: none;
+}
+
+.search-n-login{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  gap: 1rem;
+}
+
+.search{
+  padding: 7px 0 7px 2.5rem;
+  width: 15rem;
+  text-align: left;
+
+  background-color: #efefef;
+  border: none;
+  border-radius: 20px;
+}
+
+
+input:focus {
+  border: 1px solid var(--warna-aksen);
+  background-color: #ececec;
+  outline: none;
+}
+
+.search-field svg{
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+footer{
+  background-color: #20245e;
+  color: white;
+  width: 100%;
+  margin: auto;
+  padding: 3rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+
+
+footer p, footer a{
+  padding: 1rem 0;
+  color: white;
+}
+
+/* untuk edit foto profile */
+.input-edit-foto-profile {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 10px;
+  cursor: pointer;
 }

@@ -118,6 +118,17 @@ a {
     text-decoration: underline;
 }
 
+.forgot-password2 {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.go-to-signup {
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
 .submit-btn {
     width: 100%;
     padding: 10px 15px;

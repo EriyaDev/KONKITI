@@ -128,6 +128,18 @@ a {
     text-decoration: underline;
 }
 
+.forgot-password2 {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.go-to-signup {
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    
+}
+
 .profile-buttons {
     margin-top: 20px;
     text-align: center;

@@ -11,9 +11,16 @@
     <main>
       <section>
         <div class="container">
+
+          <!-- Nambahin edit foto profil -->
           <div class="image-setting-container">
             <img src="image/Myu.webp" class="image-setting" alt="Foto Profil" title="Foto Profil">
+            <label for="file-upload" class="custom-file-upload">
+              Ubah Foto Profil
+            </label>
+            <input id="file-upload" type="file" required class="input-edit-foto-profile" />
           </div>
+
           <form id="editProfileForm">
             <!-- Informasi Dasar -->
             <div class="profile-section basic-info-form">
@@ -72,16 +79,6 @@
                 <input type="text" id="kota" name="kota" required />
               </div>
               
-            </div>
-
-            <!-- Pengaturan Privasi -->
-            <div class="profile-section">
-              <h2>Pengaturan Privasi</h2>
-              <label>Privasi</label>
-              <input type="radio" id="publik" name="privasi" value="Publik" required />
-              <label for="publik">Publik</label>
-              <input type="radio" id="pribadi" name="privasi" value="Pribadi" required />
-              <label for="pribadi">Pribadi</label>
             </div>
 
             <!-- Tombol Simpan -->
